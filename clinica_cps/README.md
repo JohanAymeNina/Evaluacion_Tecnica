@@ -3,8 +3,8 @@
 Examen técnico Nº001-2026-AJMZ-CPS · Postulante: Johan Ayme Nina · Datos 100 % ficticios.
 
 ## 1. Tecnología y versiones
-- PHP **[completar con `php -v`, ej. 8.2.x]** (puro, sin framework) con PDO
-- MySQL/MariaDB **[completar, ej. MariaDB 10.4 de XAMPP]**
+- PHP 8.2.12 (puro, sin framework) con PDO
+- MySQL/MariaDB (MariaDB 10.4.32 de XAMPP)
 - XAMPP + Sublime Text. Frontend: HTML + CSS + 3 líneas de JavaScript (sin librerías).
 
 Se eligió PHP puro (sin Laravel) por el plazo de 5 días y por dominio de la herramienta. Los controles que Laravel trae listos
@@ -68,7 +68,7 @@ roles 1───* usuarios 1───* ventas *───1 pacientes
   todo dentro de una transacción con `SELECT ... FOR UPDATE` (protege también ante ventas simultáneas) y `UPDATE ... WHERE stock >= cantidad`.
 - **Otros**: consultas parametrizadas (PDO), `htmlspecialchars` en toda salida, token CSRF en todos los POST, botón de confirmar se deshabilita tras el clic (doble envío).
 
-## 8. Lista de comprobación de los 10 casos (marcar y adjuntar captura)
+## 8. Lista de comprobación de los 10 casos
 | # | Pasos | Resultado esperado | OK |
 |---|---|---|---|
 | 01 | Login con clave incorrecta; luego ingresar bien y pulsar **Salir**; intentar abrir `ventas.php` | Error de login; tras salir redirige a login | [ ] |
